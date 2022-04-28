@@ -6,5 +6,4 @@ COPY app/web.py /srv/app/web.py
 COPY app/conf/web.conf /srv/app/conf/web.conf
 
 WORKDIR /srv/app/
-#VOLUME ["/tmp/test"]
 CMD [ "sh", "-c", "python3 web.py" ]
